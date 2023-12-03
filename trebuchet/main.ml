@@ -77,6 +77,5 @@ let filename1 = "test.txt"
 let () =
   let file = In_channel.create filename1 in
   let lst  = In_channel.input_lines file in
-  print_endline (String.concat ~sep:"\n" (List.map ~f:fst_last lst));
   Printf.printf "\nSum: %i\n" (sum lst);
   In_channel.close file
