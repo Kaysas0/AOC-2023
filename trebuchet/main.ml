@@ -71,11 +71,10 @@ let sum lst =
   List.map ~f:fst_last lst
   |> List.fold ~init:0 ~f:(fun x y -> x + Int.of_string y)
 
-(* let filename = "input.txt" *)
-let filename1 = "test.txt"
+let filename = "input.txt"
 
 let () =
-  let file = In_channel.create filename1 in
+  let file = In_channel.create filename in
   let lst  = In_channel.input_lines file in
   Printf.printf "\nSum: %i\n" (sum lst);
   In_channel.close file
