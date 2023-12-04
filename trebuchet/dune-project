@@ -1,5 +1,5 @@
 (lang dune 3.8)
 (name trebuchet)
 (source
- (github Kaysas/Advent-of-code))
-(authors "Kaysas")
+ (github Kaysas0/AOC-2023))
+(authors "Kaysas0")
